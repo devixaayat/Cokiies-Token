@@ -489,7 +489,7 @@ class bot_follow:
 		menu()
 class curi_anak:
        def __init__(self):
-		try:
+	       try:
 			toket=open(".login.txt","r").read()
 			token=open(".login.txt","r").read()
 			otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
