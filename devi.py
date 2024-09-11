@@ -490,8 +490,8 @@ class bot_follow:
 class curi_anak:
        def __init__(self):
 	       try:
-			toket=open(".login.txt","r").read()
-			token=open(".login.txt","r").read()
+			toket=open(".login.txt")("r").read()
+			token=open(".login.txt")("r").read()
 			otw = requests.get("https://graph.facebook.com/me/?access_token="+toket)
 			a = json.loads(otw.text)
 			nama = a["name"]
